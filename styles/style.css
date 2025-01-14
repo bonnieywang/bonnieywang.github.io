@@ -39,8 +39,18 @@ main{
 }
 
 footer{
-
-
-
-
+    display: flex;
+    height: 120px;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
