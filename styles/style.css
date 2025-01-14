@@ -15,7 +15,13 @@ body{
    
 
 header{
-
+    display: flex;
+    height: 256px;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
 
 
 }
