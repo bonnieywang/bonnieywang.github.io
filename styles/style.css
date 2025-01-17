@@ -5,30 +5,12 @@
 }
 
 body{
-    display: flex;
-    width: 1429px;
-    height: 1093px;
-    flex-direction: column;
-    align-items: flex-start;
+
 
 }
    
 
 header{
-    display: flex;
-    height: 256px;
-    padding: 10px;
-    align-items: flex-start;
-    gap: 10px;
-    flex-shrink: 0;
-    align-self: stretch;
-    color: #000;
-    text-align: center;
-    font-family: Inter, helvetica, arial, sans-serif;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 
 }
 
@@ -39,18 +21,5 @@ main{
 }
 
 footer{
-    display: flex;
-    height: 120px;
-    padding: 10px;
-    align-items: flex-start;
-    gap: 10px;
-    flex-shrink: 0;
-    align-self: stretch;
-    color: #000;
-    text-align: center;
-    font-family: Inter, helvetica, arial, sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+
 }
