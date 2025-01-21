@@ -29,8 +29,40 @@
     </header>
 
 
-
-
+    <button class="accordion">January 7th, 2025</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Our first lecture! While I've dabbled in HTML before, I never TRULY understood what all the coding jargon meant, so it was really nice to have it broken down in an easier to understand way! Specifically, knowing how the different coding languages (ex. HTML, CSS, and Javascript) relate and pair with each other was something I didn't really understand before. I've always wanted to take a coding course so I'm super excited for everything we'll cover in this class!</p>
+        </div>
+    </div>
+      
+    
+    <button class="accordion">January 14th, 2025</button>
+    <div class="panel">
+      <p>I'm starting to</p>
+    </div>
+    
+    <button class="accordion">January 21st, 2025</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
     <footer> &copy;2025 Bonnie Wang. </footer>
 
