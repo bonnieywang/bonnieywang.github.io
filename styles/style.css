@@ -7,11 +7,12 @@
 
 nav{
     display: flex;
-    padding: 10px;
-    justify-content:flex-start;
-    align-items: center;
-    align-content: center;
-    gap: 48px;
+    height: 96px;
+    padding: 13px 56px;
+    align-items: flex-start;
+    gap: 144px;
+    flex-shrink: 0;
+    align-self: stretch;
 }
 
 header{
