@@ -43,6 +43,18 @@ nav .links {
     align-items: center; /* Keeps the links vertically centered */
 }
 
+nav .links a {
+    text-decoration: none;
+    color: #444; /* Text color for links */
+    margin: 0 12px; /* Spacing between links */
+    font-size: 16px; /* Font size for links */
+    transition: all 0.3s ease;
+}
+
+nav .links a:hover {
+    text-decoration: underline;
+}
+
 header{
     display: flex;
     height: min-content;
