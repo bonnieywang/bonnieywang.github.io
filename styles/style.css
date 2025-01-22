@@ -81,6 +81,18 @@ main{
     align-self: stretch;
 }
 
+.column{
+    display: flex;
+    padding: 16px 36px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 48px;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
 .row{
     display: flex;
     padding: 10px;
@@ -182,6 +194,15 @@ main{
     padding: 18px 0; /* Add vertical padding without affecting alignment */
     font-size: 15px; /* Optional: Match the font size with the accordion */
     line-height: 1.5; /* Optional: Improves readability */  
+}
+
+.panel-content ul {
+    padding-left: 1.5em; /* Adjust this value to match the paragraph indentation */
+    margin: 0;          /* Removes any additional space around the list */
+}
+
+.panel-content li {
+    text-indent: 0; /* Ensures no additional indent for list items */
 }
   
 
