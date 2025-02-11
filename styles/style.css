@@ -160,6 +160,12 @@ main{
     text-transform: lowercase;
 }
 
+/*Image responsive*/
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
 .accordion {
     background-color: #f8f8f8;
     color: #444;
