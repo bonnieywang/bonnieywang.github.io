@@ -166,6 +166,7 @@ main{
     height: auto;
   }
 
+
 .accordion {
     background-color: #f8f8f8;
     color: #444;
@@ -224,6 +225,18 @@ main{
     text-indent: 0; /* Ensures no additional indent for list items */
 }
   
+.img-container{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: relative;
+}
 
 footer{
     display: flex;
