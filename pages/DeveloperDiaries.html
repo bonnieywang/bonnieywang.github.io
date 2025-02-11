@@ -28,6 +28,73 @@
         <p><a href="../index.html"> Back to the home page</a></p>
     </header>
 
+    <button class="accordion">Week 1</button>
+    <div class="panel">
+        <div class="panel-content">
+            <h3>Wednesday</h3>
+            <p>
+                In this first week, our whole team assembled to have an initial brainstorming session about what our project could entail. While the general concept was established, there were still a lot of aspects of the interactivity that needed to be fleshed out.
+                
+                We prepared for our project pitch and delegated roles for the remainder of the week, leading up to the submission of our pre-production document drafts.
+                - Realizing we only had two weeks before the submission deadline, we made a big push to finish research and concept art before our next meeting.
+            </p>
+            <br>
+            
+            <h3>Friday</h3>                
+            <p>               
+                I participated in conducting visual/informational research on coyote and great horned owl for our scripting next week. This included compiling information, sound clips, and images online in preparation for scripting, concept art, and visual asset creation later.
+            </p>
+            <br>
+
+            <h3>Sunday</h3> 
+            <p>            
+                I also created sketches for the animals above and our titular character Beanie (my dog!) to help generate ideas for concept art next week:
+            </p>
+            <img src="../images/Animal Sketches.png" height="232px" width="800 px" alt="Sketches of animals in the backyard">
+
+            <p>
+                In terms of my role as a UI/UX designer, I helped to brainstorm some typography options that would help evoke the atmosphere of our moodboard and began to create a list of the different types of text and interactive features/icons we would need.
+                <br>
+                Priya and Emily did a lot of the upfront work to help us figure out what our visual style might be, and outline the narrative and story mechanisms. As a support role, I helped provide feedback and began looking into the development tools/skills that would be required to integrate the interactions.
+            </p> 
+            <br>
+            <h3>Plans for next week:</h3>
+            <ul>
+                <li>Together, decide on visual style.</li>
+                <li>Once script is finished, create a storyboard.</li>
+                <li>Assemble design document draft for submission including the following pages:</li>
+                <ul>
+                    <li>Project Overview</li>
+                    <li>Workflow</li>
+                    <ul>
+                        <li>Timeline (updated - not including user testing - and fleshed out)</li>
+                        <li>Team Roles</li>
+                    </ul>
+                    <li>Research</li>
+                    <li>Visual Style</li>
+
+                </ul>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
     <footer> &copy;2025 Bonnie Wang. </footer>
 
