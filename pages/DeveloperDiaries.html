@@ -28,6 +28,10 @@
         <p><a href="../index.html"> Back to the home page</a></p>
     </header>
 
+    <!--Back to Top Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+
+
     <button class="accordion">Week 1</button>
     <div class="panel">
         <div class="panel-content">
@@ -79,6 +83,48 @@
         </div>
     </div>
 
+    <button class="accordion">Week 2</button>
+    <div class="panel">
+        <div class="panel-content">
+            <h3>Wednesday</h3>
+            <p>
+                To better visualize our preliminary ideas, I helped draft a very basic storyboard on Procreate. I included the primary scenes that would be needed, including the forest and parallax mechanism, what would happen when an animal was found, and how the user would wrap up the story and solve the mystery.     
+                <br>            
+                This helped me walk through our ideas in more logical steps and visualize how interactions might work. It also helped me identify problems we might face later that I didn’t think of during our initial planning stages. 
+            </p>
+            <br>   
+            <img src="../images/Storyboard V001.png" class="responsive" alt="Screenshot of a storyboard overview.">
+            <br>  
+            <br>  
+
+            <p>
+
+                I also created refined sketches for our concept art. We decided because some of our animals would be found in similar areas, each animal’s silhouette needed to really stand out. To try and solve the visual problem, we decided to refine our sketches drawing only the silhouettes first, and then adding line art to describe the features.
+            </p>
+
+            <br>  
+            <img src="../images/Animal Sketches Silhouettes 1.png" class="responsive" alt="Sketches of a coyote and owl">
+            <br>
+            <br>
+
+            <h3>Thursday</h3>                
+            <p>               
+                We had a team meeting today where we provided updates and feedback on the work we had completed since Tuesday. Everyone is doing such great work and it feels amazing to see all the progress we have already in week two (I couldn’t imagine being here at the beginning of February)! Afterwards, I continued to compile images for our mood board, develop our colour palette, and test out various font options that Emily and I gathered. I helped set up the templates for our design document in Figma so it would be easy to copy and replicate, began populating the various sections by describing our design process and inserting progress photos.
+             </p>
+            <br>
+
+            <h3>Friday</h3> 
+            <p>            
+                After receiving all the assets from my group members, I compiled screenshots and images of our pre-production work on Figma and assembled our design document. Using the visual references we had gathered, I expanded on our thought process and justified the design decisions that were made.            </p>
+            <img src="../images/Design Doc WIP.png" class="responsive" alt="Screenshot of design document in progress.">
+
+            <br>
+
+
+        </div>
+
+    </div>
+
     <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -96,6 +142,27 @@
     }
     </script>
 
+    <script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
     <footer> &copy;2025 Bonnie Wang. </footer>
 
 </body>
