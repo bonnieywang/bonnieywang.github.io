@@ -5,6 +5,18 @@
     font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
+/* unvisited link */
+a:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+  }
+
+
 body{
     display: flex;
     /* Values not needed for live website
