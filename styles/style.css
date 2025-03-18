@@ -259,22 +259,22 @@ main{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(221, 244, 255); /* Set a background color */
+    background-color: #f0f0f0; /* Set a background color */
     color: #171717; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 15px; /* Increase font size */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a modern look */
-    border: 1px solid #171717;
+    /*border: 1px solid #171717;*/
 
 
   }
   
   #myBtn:hover {
-    background-color: #557a96; /* Add a dark-grey background on hover */
-    color: #FFF;
-    text-decoration: underline;
+    background-color: #c7c7c7; /* Add a light blue background on hover */
+    color: #000000;
+    font-weight: bold;
   }
 
   	/* 
