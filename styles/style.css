@@ -277,6 +277,19 @@ main{
     text-decoration: underline;
   }
 
+  	/* 
+	* Duplicate the following selector and rule
+	* for each instance of
+	* the component in your webpage. 
+	* In this example the viewer is being
+	* invoked on a div with an id = "viewer1"
+	* and the class name "bmc_3dviewer"
+	*/
+	div#viewer1.bmc_3dviewer {
+		width:100%; 
+		height:500px; 
+	}
+
 footer{
     display: flex;
     height: 88px;

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title> Course Log</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../vendor/bmc3dviewer/css/bmc3dviewer.css">
 
 </head>
 
@@ -136,6 +137,28 @@
         </div>
     </div>
 
+    <button class="accordion">March 11th, 2025</button>
+    <div class="panel">
+        <p>asdf</p>
+        <div id="GLB_3Dviewer" class='bmc_3dviewer'
+        data-src='[{"path":"../images/bunny.glb", "name":"bunny"}]'
+
+        data-debug='false' 
+        data-min-zoom='0.75'
+        data-max-zoom='1.25'
+        data-min-distance='5'
+        data-min-distance='20'
+        data-background-colour='0xe5f7ff' 
+        data-reset-view-btn='true' 
+        data-ortho-cam-size='5.0'
+        data-key-light-intensity='2.0'
+        data-fill-light-intensity='3.0'
+        data-initial-orientation='{"x":0, "y":0, "z":-10}'
+        data-camera-target='{"x":0, "y":1, "z":0}'>
+    </div>
+    </div>
+
+
     <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -207,6 +230,9 @@
             });
 
     </script>
+
+    <script type="module" src="../vendor/bmc3dviewer/main.js"></script>
+
 
     <footer> &copy;2025 Bonnie Wang. </footer>
 
