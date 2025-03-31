@@ -1,0 +1,47 @@
+#animationContainer {
+        
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    box-sizing: border-box;
+}
+div#uislider { 
+    position: bottom;
+    padding: 20px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    border-radius: 5px;  
+    background: rgba(231, 231, 231);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 50%; 
+background: #000000;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: #000000;
+cursor: pointer;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
