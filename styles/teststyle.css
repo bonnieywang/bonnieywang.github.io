@@ -1,47 +1,95 @@
+/* Animation container */
 #animationContainer {
-        
-    width: 100%;
-    height: 100%;
-    transform: translate3d(0, 0, 0);
+    width: 80%; /* Make it 80% of the container width */
+    max-width: 600px; /* Limit the max width to 600px */
+    height: auto;
+    max-height: 400px; /* Limit the height of the animation */
+    margin: 0 auto; /* Center the container */
     box-sizing: border-box;
-}
-div#uislider { 
-    position: bottom;
-    padding: 20px;
-}
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 12px;
-    border-radius: 5px;  
-    background: rgba(231, 231, 231);
-    outline: none;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
--webkit-appearance: none;
-appearance: none;
-width: 25px;
-height: 25px;
-border-radius: 50%; 
-background: #000000;
-cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-width: 25px;
-height: 25px;
-border-radius: 50%;
-background: #000000;
-cursor: pointer;
 }
 
 .container {
-    width: 70%;
-    margin: 50px auto;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;  /* Center items */
+    gap: 15px; /* Adds spacing between slider and other elements */
+    width: 100%;  /* Make container take up full width */
+}
+
+
+/* Slider */
+.slider {
+    -webkit-appearance: none;
+    width: 100%; /* Make the slider take up full width */
+    height: 12px;
+    border-radius: 5px;
+    background: rgba(231, 231, 231);
+    outline: none;
+    transition: opacity .2s;
+}
+
+/* Slider thumb */
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #000000;
+    cursor: pointer;
+}
+
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+
+/* Slider container */
+.slider-wrapper {
+    position: relative;
+    width: 80%; /* Make the slider 80% of the container width */
+    max-width: 600px; /* Limit the max width of the slider */
+    margin: 0 auto; /* Center the slider */
+}
+
+/* Tick marks */
+#tickmarks {
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    pointer-events: none;
+}
+
+.tick {
+    width: 2px;
+    height: 15px;
+    background: black;
+}
+
+/* Media queries for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    #animationContainer {
+        max-width: 90%; /* Increase width for smaller screens */
+        max-height: 300px; /* Reduce height on smaller screens */
+    }
+
+    .slider-wrapper {
+        width: 90%; /* Make the slider more flexible on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #animationContainer {
+        max-width: 95%; /* Make it almost full width on small mobile screens */
+        max-height: 250px; /* Further reduce height */
+    }
+
+    .slider-wrapper {
+        width: 95%; /* Make slider wider on mobile */
+    }
 }

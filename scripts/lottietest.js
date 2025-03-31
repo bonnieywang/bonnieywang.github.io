@@ -1,8 +1,5 @@
         // Get DOM input objects
         var slider = document.getElementById("slider");
-        var pause_btn = document.getElementById("pause_btn");
-        var start_btn = document.getElementById("start_btn");
-        
         var animationContainer = document.getElementById("animationContainer");
         var anim = {
             container: animationContainer, // the dom element that will contain the animation
@@ -37,18 +34,6 @@
             console.log("anim elements have been added to the DOM");
         }
         
-        function onPauseClick(e){
-            console.log("Pause clicked");
-            animInstance.pause();
-        }
-        function onStartClick(e){
-            console.log("Start clicked");
-            animInstance.play();
-        }
-        function onGotoAndStop(e){
-            animInstance.goToAndStop(200.0 * 40, false);
-        }
-        
         function onSliderDown(e)
         {
             animInstance.pause();
@@ -75,9 +60,45 @@
         animInstance.addEventListener("config_ready", onAnimConfigReady);
         animInstance.addEventListener("DOMLoaded", onAnimDomLoaded);
         
-        
-
-        start_btn.addEventListener("click", onStartClick);
-        pause_btn.addEventListener("click", onPauseClick);
-     
+      
         console.log(animInstance);
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const slider = document.getElementById("slider");
+          const tickmarks = document.getElementById("tickmarks");
+      
+          // Get the width of the slider and thumb
+          const sliderWidth = slider.offsetWidth;
+          const thumbWidth = 25; // Slider thumb width
+          const thumbOffset = thumbWidth / 2; // Offset for center alignment
+      
+          // Key points for tick marks at 0%, 50%, and 100%
+          const keyPoints = [0, 0.5, 1];
+      
+          // Create tick marks dynamically
+          keyPoints.forEach((point, index) => {
+              const tick = document.createElement("div");
+              tick.classList.add("tick");
+      
+              // Calculate the position for each tick mark
+              let tickPosition = point * sliderWidth;
+      
+              // Adjust position for 0% and 100% ticks (move inward by half the thumb width)
+              if (index === 0) {
+                  tickPosition += thumbOffset; // Adjust for left tick mark
+              } else if (index === 2) {
+                  tickPosition -= thumbOffset; // Adjust for right tick mark
+              }
+      
+              // Apply the adjusted position
+              tick.style.left = `${tickPosition}px`;
+      
+              // Append the tick to the container
+              tickmarks.appendChild(tick);
+          });
+      });
+      
+      
+      
+      
+      

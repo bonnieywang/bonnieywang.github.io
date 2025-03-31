@@ -20,12 +20,18 @@
         </div>
 
         <div class="container">
-            <input id="start_btn" type="button" value="play" onclick="playPause()"/>
-            <input id="pause_btn" type="button" value="pause" onclick="playPause()"/>
-            <input id="slider" type="range" max="1" min="0" value="0" class="slider"/>
+            <!-- Slider Wrapper to hold both slider and tick marks -->
+            <div class="slider-wrapper">
+                <input id="slider" type="range" max="1" min="0" value="0" class="slider" />
+                <div id="tickmarks"></div> <!-- Tick marks inside the wrapper -->
+            </div>
         </div>
+        
+
 
     </main>
+
+    <br>
 
     <footer> &copy;2025 Bonnie Wang. </footer>
 
