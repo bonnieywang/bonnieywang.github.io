@@ -52,7 +52,7 @@
         {
             console.log("Slider change " + slider.value + " " + animInstance.currentFrame + " "+ animInstance.getDuration(true));
             // see https://github.com/airbnb/lottie-web
-            animInstance.goToAndStop(slider.value * 41.0, false);
+            animInstance.goToAndStop(slider.value * 30.0, false);
         }
         
         animInstance.addEventListener("enterFrame", onEnterAnimationFrame);
