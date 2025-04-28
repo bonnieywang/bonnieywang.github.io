@@ -16,18 +16,20 @@
 
     <main>
 
-        <div id="animationContainer">
-        </div>
+        <div id="animationWrapper">
+            <div id="animationContainer"></div>
+            <img id="skinOverlay" src="../images/skin-overlay.png" alt="Skin Overlay">
+            <button id="toggleOverlayBtn" onclick="toggleOverlay()">Toggle Skin</button>
+          </div>
 
         <div class="container">
             <!-- Slider Wrapper to hold both slider and tick marks -->
             <div class="slider-wrapper">
-                <input id="slider" type="range" max="1" min="0" value="0" class="slider" />
+                <input id="slider" type="range" max="1" min="0" value="0" step="any" class="slider" />
                 <div id="tickmarks"></div> <!-- Tick marks inside the wrapper -->
             </div>
         </div>
         
-
 
     </main>
 
@@ -36,7 +38,8 @@
     <footer style="font-family:Helvetica;text-align:center;"> &copy;2025 Bonnie Wang. </footer>
 
       <!-- Scripts -->
-  <script src="../scripts/bodymovin.js"></script>
-  <script src="../scripts/lottietest.js"></script>
+  <script src="../scripts/bodymovin1.js"></script>
+  <script src="../scripts/lottietest1.js"></script>
+  <script src="../scripts/togglebutton.js"></script>
 </body>
 </html>
