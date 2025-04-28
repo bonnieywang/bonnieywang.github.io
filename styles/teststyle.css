@@ -141,7 +141,7 @@
     opacity: 0.5;
   }
   
-  #toggleSkinOverlayBtn {
+  #toggleSkinOverlayBtn,   #toggleBoneOverlayBtn {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -150,8 +150,9 @@
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    font-family: Helvetica;
+    font-family: Public Sans;
     border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
   }
 
   #toggleBoneOverlayBtn {
@@ -163,7 +164,33 @@
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    font-family: Helvetica;
+    font-family: Public Sans;
     border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
   }
+
+  /* Hover state */
+#toggleSkinOverlayBtn:hover, #toggleBoneOverlayBtn:hover {
+    background-color: #3e6990; /* Change to a green background */
+    color: rgb(255, 255, 255); /* Change text color to white */
+}
   
+  /* Active state for buttons */
+#toggleSkinOverlayBtn.active, #toggleBoneOverlayBtn.active {
+    background-color: rgba(226, 226, 226, 0.9);
+    color: rgb(124, 124, 124);
+    font-weight: normal; /* Ensure text is not bold in active state */
+}
+
+/* Inactive state (default) */
+#toggleSkinOverlayBtn, #toggleBoneOverlayBtn {
+    background-color: #6da3d3;  /* Green for active state */
+    color: white;;
+    font-weight: bold; /* Make text bold in inactive state */
+}
+
+/* Active button with hover */
+#toggleSkinOverlayBtn.active:hover, #toggleBoneOverlayBtn.active:hover {
+    background-color: #3e6990; /* Darker green when hovering over an active button */
+    color: white; /* Ensure text remains white when active and hovered */
+}
