@@ -6,7 +6,12 @@
     max-height: 400px; /* Limit the height of the animation */
     margin: 0 auto; /* Center the container */
     box-sizing: border-box;
+
+    position: relative; /* <-- ADD THIS */
+    z-index: 3; /* <-- MAKE SURE IT'S ABOVE overlay */
 }
+  
+
 
 .container {
     display: flex;
@@ -99,7 +104,7 @@
     width: 600px; /* Adjust to your animation's size */
     height: 350px; /* Set to match your animation height */
     margin: auto;
-
+    z-index: 2;
   }
   
   #skinOverlay {
@@ -107,17 +112,53 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     display: none; /* Start hidden */
     pointer-events: none;
-    z-index: 2;
-    opacity: 0.5; /* 👈 lower value = more transparent */
+    z-index: 1;
+    opacity: 0.2; /* 👈 lower value = more transparent */
   }
   
-  #toggleOverlayBtn {
+  #boneBehind {
     position: absolute;
-    top: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2; /* Under animation but above skin */
+    opacity: 1;
+  }
+
+  #boneFront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 4; /* Top overlay */
+    opacity: 0.5;
+  }
+  
+  #toggleSkinOverlayBtn {
+    position: absolute;
+    bottom: 10px;
     right: 10px;
-    z-index: 3;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: Helvetica;
+    border-radius: 4px;
+  }
+
+  #toggleBoneOverlayBtn {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    z-index: 5;
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
     padding: 8px 12px;
